@@ -1,0 +1,85 @@
+{
+  "name": "blast_2021",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@jiaminghi/data-view": "^2.10.0",
+    "@vue/composition-api": "^1.2.4",
+    "axios": "^0.21.1",
+    "bootstrap-vue": "^2.17.3",
+    "core-js": "^3.6.5",
+    "echarts": "^5.1.2",
+    "echarts-gl": "^2.0.9",
+    "echarts-stat": "^1.2.0",
+    "element-ui": "^2.15.3",
+    "file-saver": "^2.0.5",
+    "jquery": "^1.9.1",
+    "js-export-excel": "^1.1.4",
+    "konva": "^7.2.4",
+    "mars3d": "^3.6.7",
+    "mars3d-space": "^3.6.7",
+    "moment": "^2.29.1",
+    "pdfjs-dist": "^2.0.943",
+    "qs": "^6.10.1",
+    "save": "^2.4.0",
+    "three": "^0.156.1",
+    "vue": "^2.6.11",
+    "vue-axios": "^3.2.4",
+    "vue-cookies": "^1.7.4",
+    "vue-echarts": "^5.0.0-beta.0",
+    "vue-konva": "^2.1.7",
+    "vue-moment": "^4.1.0",
+    "vue-pdf": "^4.3.0",
+    "vue-resize": "^1.0.1",
+    "vue-router": "^3.2.0",
+    "vue-seamless-scroll": "^1.1.23",
+    "vue-session": "^1.0.0",
+    "vuescroll": "^4.17.3",
+    "vuex": "^3.6.2",
+    "websocket": "^1.0.34",
+    "xlsx": "^0.17.3"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.11.5",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "^4.5.11",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "bootstrap": "^4.5.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "mutationobserver-shim": "^0.3.7",
+    "popper.js": "^1.16.1",
+    "portal-vue": "^2.1.7",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "script-loader": "^0.7.2",
+    "vue-cli-plugin-bootstrap-vue": "~0.7.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

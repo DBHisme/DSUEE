@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.extreme_energy_efficiency.dao.HistoryActualMapper">
+    
+    <select id="selectAll" resultType="com.example.extreme_energy_efficiency.dao.entity.History">
+        select * from history_actual
+    </select>
+
+    <insert id="insert" parameterType="com.example.extreme_energy_efficiency.dao.entity.History">
+        insert into history_actual(name, coke, coal, BFG, COG, electricity,
+                            water, N2, steam, updateTime,
+                            ratioCoke, ratioCoal, ratioBFG, ratioCOG,
+                            ratioElectricity, ratioWater, ratioN2,ratioSteam)
+        values (#{name}, #{coke}, #{coal}, #{BFG}, #{COG}, #{electricity},
+                #{water}, #{N2}, #{steam}, #{updateTime},
+                #{ratioCoke}, #{ratioCoal}, #{ratioBFG}, #{ratioCOG},
+                #{ratioElectricity}, #{ratioWater}, #{ratioN2}, #{ratioSteam})
+    </insert>
+
+    <delete id="deleteByID" parameterType="com.example.extreme_energy_efficiency.dao.entity.History">
+        delete from history_actual
+        where ID=#{ID}
+    </delete>
+
+</mapper>

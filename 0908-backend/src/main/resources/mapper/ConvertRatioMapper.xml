@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.extreme_energy_efficiency.dao.ConvertRatioMapper">
+
+    <select id="getConvertRatio" resultType="com.example.extreme_energy_efficiency.dao.entity.ConvertRatioEntity">
+        select * from convert_ratio
+    </select>
+
+</mapper>

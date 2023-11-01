@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.extreme_energy_efficiency.dao.RatioMixedOreMapper">
+
+    <resultMap id="ratioOreMap" type="com.example.extreme_energy_efficiency.dao.entity.RatioMixedOre">
+        <result property="name" column="混合矿"/>
+        <result property="ore1" column="匀矿A"/>
+        <result property="ore2" column="匀矿B"/>
+        <result property="ore3" column="匀矿C"/>
+        <result property="ore4" column="匀矿D"/>
+        <result property="ore5" column="小球"/>
+        <result property="ore6" column="烧结粉"/>
+        <result property="ore7" column="OG泥"/>
+    </resultMap>
+
+    <select id="selectAll" resultMap="ratioOreMap">
+        select * from mixed_ore
+    </select>
+
+
+</mapper>

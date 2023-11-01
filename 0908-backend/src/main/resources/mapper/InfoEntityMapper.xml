@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.extreme_energy_efficiency.dao.InfoEntityMapper">
+  <resultMap id="AnswerDetailMap" type="com.example.extreme_energy_efficiency.dao.entity.InfoEntity">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="author" jdbcType="VARCHAR" property="author" />
+    <result column="article_name" jdbcType="VARCHAR" property="article_name" />
+    <result column="web_location" jdbcType="VARCHAR" property="web_location"/>
+    <result column="institution" jdbcType="VARCHAR" property="institution"/>
+    <result column="data" jdbcType="VARCHAR" property="data"/>
+    <result column="source" jdbcType="VARCHAR" property="source"/>
+    <result column="keyword" jdbcType="VARCHAR" property="keyword"/>
+    <result column="classification_number" jdbcType="VARCHAR" property="classification_number"/>
+    <result column="summary" jdbcType="VARCHAR" property="summary"/>
+    <result column="pdf_location" jdbcType="VARCHAR" property="pdf_location"/>
+  </resultMap>
+
+
+  <select id="queryInfoList" resultType="com.example.extreme_energy_efficiency.dao.entity.InfoEntity">
+    select *
+    from info
+    <where>
+      <if test="article_name!=''">
+        and article_name like concat('%',#{article_name,jdbcType=VARCHAR},'%')
+      </if>
+      <if test="id!=''">
+        and id = #{id,jdbcType=VARCHAR}
+      </if>
+    </where>
+  </select>
+
+
+
+
+</mapper>
